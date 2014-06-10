@@ -1,6 +1,6 @@
 name: 'Validator Example'
 type: module
-description: 'Demonstrates using a re-usable validator for different kinds of output.'
+description: 'Demonstrates a re-usable validator for multiple input channels (FormAPI, REST, Migrate, etc.).'
 package: Examples
 version: VERSION
 core: 8.x
