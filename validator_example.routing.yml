@@ -1,0 +1,6 @@
+validator_example.validator_example_form:
+  path: '/validator_example_form'
+  defaults:
+    _form: '\Drupal\validator_example\Form\ValidatorExampleForm'
+  requirements:
+    _access: 'TRUE'
