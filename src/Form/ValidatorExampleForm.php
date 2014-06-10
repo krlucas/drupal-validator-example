@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Form class ton help demonstrate using validators.
+ * Form class to help demonstrate using validators.
  */
 
 namespace Drupal\validator_example\Form;
@@ -11,6 +11,9 @@ use Drupal\Core\Form\FormBase;
 use Drupal\validator_example\Plugin\Validation\Constraint;
 
 
+/**
+ * Provides example form to demonstrate Drupal validators.
+ */
 class ValidatorExampleForm extends FormBase {
 
   /**
@@ -49,7 +52,9 @@ class ValidatorExampleForm extends FormBase {
    */
   public function validateForm(array &$form, array &$form_state) {
     $validator = new Constraint\ValidExampleInputValidator();
-    $result = $validator->validate($form_state['values']['textfield1']);
+
+    // @todo: How to use validator or validator plug-in in form?
+    // $result = $validator->validate($form_state['values']['textfield1'], $constraint);
   }
 
 }
